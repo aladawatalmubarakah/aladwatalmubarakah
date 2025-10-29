@@ -1,0 +1,212 @@
+body {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    overflow-x: hidden;
+    background-color: #fff;
+    padding-top: 90px; /* تعويض ارتفاع navbar */
+}
+
+h6, .h6 {
+    font-size: 3rem;
+    color: #b68b02;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    z-index: 1030;
+    transition: all 0.5s ease;
+}
+.navbar.scrolled {
+    background-color: #2a3c58; /* نفس لون الفوتر */
+}
+.navbar-brand h1 {
+    color: #2a3c58;
+    font-size: 44px;
+    transition: all 0.5s ease;
+}
+.navbar.scrolled .navbar-brand h1 {
+    color: #fff;
+}
+.navbar-nav .nav-link {
+    color: #2a3c58 !important;
+    font-weight: 600;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+.navbar.scrolled .nav-link {
+    color: #fff !important;
+}
+.navbar-nav .nav-link:hover {
+    color: #b68b02 !important;
+}
+
+/* Dropdown */
+.nav-item.dropdown .dropdown-menu {
+    border-radius: 12px;
+}
+
+/* Carousel */
+.wel {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    background: rgba(42, 60, 88, 0.75);
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+
+/* Buttons */
+.btn-gold {
+    background-color: #b68b02;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+     
+}
+.btn-gold:hover {
+    background-color: #8a6d01;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* About Section */
+.about-section h6 { color: #b68b02; font-weight: bold; font-size: 3rem; }
+.about-section h1 { color: #2a3c58; font-weight: 700; }
+.about-section p { font-size: 17px; color: #444; line-height: 1.9; }
+
+/* Vision/Mission Cards */
+.card { border-radius: 15px; transition: all 0.4s ease; background-color: #f8f9fa; }
+.card:hover { transform: translateY(-8px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+.card .icon i { color: #b68b02; }
+.card h4 { font-size: 2rem; color: #b68b02; } /* اللون الذهبي */
+
+/* Products Carousel */
+.products-section { background-color: #f8f9fa; }
+.products-section h6 { color: #b68b02; font-weight: bold; font-size: 3rem; } /* عناوين ذهبية كبيرة */
+.products-section h1 { color: #000000; font-weight: bold; font-size: 3rem; } /* عناوين ذهبية كبيرة */
+.product-item { overflow: hidden; border-radius: 11px; background: #fff;  cursor: pointer; transition: transform 0.5s ease, box-shadow 0.5s ease; margin: 37px; }
+.product-item img { width: 82%; height: 218px; object-fit: cover; transition: transform 0.5s ease; }
+.product-item:hover { transform: scale(1.05); box-shadow: 0 12px 30px rgba(0,0,0,0.2); }
+.product-item:hover img { transform: scale(1.1); }
+
+
+
+/* Contact Section */
+.contact-section { background: #2a3c58; color: #fff; }
+.contact-box { background: rgba(255,255,255,0.1); border-radius: 12px; padding: 30px; transition: 0.4s; }
+.contact-box:hover { background: rgba(255,255,255,0.2); transform: translateY(-5px); }
+.contact-icon { background: #b68b02; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 15px; }
+
+/* Footer */
+footer { background: #2a3c58; color: #fff; padding: 40px 0 20px; }
+footer a { color: #b68b02; text-decoration: none; }
+footer a:hover { color: #fff; text-decoration: underline; }
+
+/* Back to top button */
+#backToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    background: #b68b02;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1050;
+    transition: all 0.3s ease;
+}
+#backToTop.show { display: flex; }
+#backToTop:hover { background: #8a6d01; }
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+    width: 100%;
+    height: 260px;
+}
+a.btn-gold {
+        padding: 1px 25px;
+}
+
+h5.card-title {
+    font-size: 25px;
+    margin-bottom: 16px;
+    padding-bottom: 13px;
+}
+
+p.card-text {
+    color: #b68b02;
+    font-size: 24px;
+}
+
+h6.text-gold.fw-bold.mb-2 {
+    FONT-SIZE: 18px;
+}
+
+/* إعدادات صورة الغلاف */
+.header-image {
+  height: 418px;
+  object-fit: cover;
+}
+
+/* اللاير الذهبي الثابت */
+.gold-overlay {
+  background: linear-gradient(rgb(40 40 40), rgba(212, 175, 55, 0.35));
+}
+
+/* اللاير المتحرك (اللمعة) */
+.shine-effect {
+  background: linear-gradient(120deg, rgba(255,255,255,0.0) 30%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.0) 70%);
+  animation: shineMove 5s infinite linear, fadeSlideIn 1.5s ease-out;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* النص فوق الصورة */
+.header-title {
+  font-size: 2rem;
+}
+
+/* حركة اللمعة */
+@keyframes shineMove {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* حركة دخول اللمعة (نعومة عند التحميل) */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+p.header-subtitle.text-white.fw-light.aos-init.aos-animate {
+    font-size: 25px;
+}
